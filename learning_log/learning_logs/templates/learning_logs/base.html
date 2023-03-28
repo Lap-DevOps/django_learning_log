@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /* CSS styles for header block */
+      header {
+        background-color: #113;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Blog Page</h1>
+    <p>Welcome to my blog about interesting topics!</p><a href="{% url 'learning_logs:index' %}">Learning Log</a>
+</header>
+<h1>Base page</h1>
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a>
+</p>
+{%block content%}{% endblock content %}
+</body>
+</html>
